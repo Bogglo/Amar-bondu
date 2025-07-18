@@ -4,20 +4,47 @@
   <meta charset="UTF-8">
   <title>আমার বন্ধু</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap');
+
     body {
-      font-family: "SolaimanLipi", sans-serif;
+      font-family: 'Hind Siliguri', sans-serif;
       background-color: #f9f9f9;
       padding: 20px;
+      margin: 0;
     }
+
     .banner {
       text-align: center;
-      background-color: #6AB04A;
+      background: linear-gradient(90deg, #6AB04A, #26de81);
       color: white;
-      padding: 15px;
+      padding: 25px 15px;
       margin-bottom: 30px;
-      border-radius: 10px;
-      font-size: 24px;
+      border-radius: 12px;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      animation: slideIn 1s ease-in-out;
     }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 40px;
+      color: #888;
+      padding: 10px;
+    }
+
     .container {
       max-width: 600px;
       background-color: #fff;
@@ -26,19 +53,23 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     img {
       max-width: 100%;
       border-radius: 10px;
     }
+
     h2 {
       text-align: center;
       color: #333;
     }
+
     p {
       font-size: 18px;
       color: #555;
       margin-bottom: 8px;
     }
+
     .label {
       font-weight: bold;
       color: #000;
@@ -48,6 +79,10 @@
 <body>
   <div class="banner">আমার বন্ধু</div>
   <div id="friends-wrapper"></div>
+
+  <div class="footer">
+    &copy; 2025 - এই ওয়েবসাইট ডিজাইন ও কপিরাইট করেছেন: <strong>আল বাইজিদ</strong>
+  </div>
 
   <script>
     const friends = [
@@ -59,10 +94,52 @@
         <p><span class="label">E-mail:</span> N/A</p>
         <p><span class="label">Roll:</span> 2</p>
         <p><span class="label">GF Name:</span> নিলা</p>
-        <p><span class="label">ব্যবহার:</span> সবার সাথে ভালো ব্যবহার করে</p>
+        <p><span class="label">ব্যবহার:</span> সবার সাথে ভালো ব্যবহার করে, এবং FreeFire খেলতে ভালোবাসে</p>
         <p><span class="label">Class:</span> 8</p>
         <p><span class="label">School:</span> ভেলাবাড়ী স্কুল এন্ড কলেজ</p>
         <p><span class="label">Home:</span> ভেলাবাড়ী</p>
+      </div>`,
+
+      `<div class="container">
+        <h2>বন্ধু: আল বাইজিদ </h2>
+        <img src="image/bayjid.jpg" alt="আল বাইজিদ">
+        <p><span class="label">Name:</span> আল বাইজিদ</p>
+        <p><span class="label">Phone:</span> N/A</p>
+        <p><span class="label">E-mail:</span> Allbayjidbishwash@gmail.com</p>
+        <p><span class="label">Roll:</span> 7</p>
+        <p><span class="label">GF Name:</span> N/A</p>
+        <p><span class="label">ব্যবহার:</span> সবার সঙ্গে ভালো ব্যবহার করে এবং প্রোগ্রামিং শিখতে ভালোবাসে</p>
+        <p><span class="label">Class:</span> 8</p>
+        <p><span class="label">School:</span> ভেলাবাড়ী স্কুল এন্ড কলেজ</p>
+        <p><span class="label">Home:</span> শালমারা</p>
+      </div>`,
+
+      `<div class="container">
+        <h2>বন্ধু: শহিদুল ইসলাম </h2>
+        <img src="image/sohidul.jpg" alt="শহিদুল ইসলাম">
+        <p><span class="label">Name:</span> শহিদুল ইসলাম</p>
+        <p><span class="label">Phone:</span> N/A</p>
+        <p><span class="label">E-mail:</span> N/A</p>
+        <p><span class="label">Roll:</span> 34</p>
+        <p><span class="label">GF Name:</span> N/A</p>
+        <p><span class="label">ব্যবহার:</span> সবার সঙ্গে ভালো ব্যবহার করে, এবং বই পড়তে ভালোবাসে</p>
+        <p><span class="label">Class:</span> 8</p>
+        <p><span class="label">School:</span> ভেলাবাড়ী স্কুল এন্ড কলেজ</p>
+        <p><span class="label">Home:</span> ভেলাবাড়ী</p>
+      </div>`,
+
+      `<div class="container">
+        <h2>বন্ধু: জাকির হোসেন </h2>
+        <img src="image/jakir.jpg" alt="জাকির হোসেন">
+        <p><span class="label">Name:</span> জাকির হোসেন</p>
+        <p><span class="label">Phone:</span> N/A</p>
+        <p><span class="label">E-mail:</span> N/A</p>
+        <p><span class="label">Roll:</span> 31</p>
+        <p><span class="label">GF Name:</span> N/A</p>
+        <p><span class="label">ব্যবহার:</span> সবার সঙ্গে ভালো ব্যবহার করে এবং ঘুরতে ভালোবাসে</p>
+        <p><span class="label">Class:</span> 8</p>
+        <p><span class="label">School:</span> ভেলাবাড়ী স্কুল এন্ড কলেজ</p>
+        <p><span class="label">Home:</span> শালমারা</p>
       </div>`,
 
       `<div class="container">
@@ -73,7 +150,21 @@
         <p><span class="label">E-mail:</span> mdsujonislam085214@gmail.com</p>
         <p><span class="label">Roll:</span> 29</p>
         <p><span class="label">GF Name:</span> N/A</p>
-        <p><span class="label">ব্যবহার:</span> FreeFire খেলতে ভালোবাসে</p>
+        <p><span class="label">ব্যবহার:</span> সবার সাথে ভালো ব্যবহার করে, এবং FreeFire খেলতে ভালোবাসে</p>
+        <p><span class="label">Class:</span> 8</p>
+        <p><span class="label">School:</span> ভেলাবাড়ী স্কুল এন্ড কলেজ</p>
+        <p><span class="label">Home:</span> ভেলাবাড়ী</p>
+      </div>`,
+
+      `<div class="container">
+        <h2>বন্ধু: ইয়াসিন ইসলাম </h2>
+        <img src="image/yasin.jpg" alt="ইয়াসিন ইসলাম">
+        <p><span class="label">Name:</span> ইয়াসিন ইসলাম</p>
+        <p><span class="label">Phone:</span> N/A</p>
+        <p><span class="label">E-mail:</span> N/A</p>
+        <p><span class="label">Roll:</span> N/A</p>
+        <p><span class="label">GF Name:</span> N/A</p>
+        <p><span class="label">ব্যবহার:</span> সবার সাথে ভালো ব্যবহার করে, এবং FreeFire খেলতে ভালোবাসে</p>
         <p><span class="label">Class:</span> 8</p>
         <p><span class="label">School:</span> ভেলাবাড়ী স্কুল এন্ড কলেজ</p>
         <p><span class="label">Home:</span> ভেলাবাড়ী</p>
@@ -87,7 +178,7 @@
         <p><span class="label">E-mail:</span> N/A</p>
         <p><span class="label">Roll:</span> 14</p>
         <p><span class="label">GF Name:</span> তানিয়া</p>
-        <p><span class="label">ব্যবহার:</span> সবার সাথে ভালো ব্যবহার করে না</p>
+        <p><span class="label">ব্যবহার:</span> সবার সঙ্গে ভালো ব্যবহার করে এবং ইংরেজি শিখতে ভালোবাসে</p>
         <p><span class="label">Class:</span> 8</p>
         <p><span class="label">School:</span> ভেলাবাড়ী স্কুল এন্ড কলেজ</p>
         <p><span class="label">Home:</span> ভেলাবাড়ী</p>
